@@ -64,9 +64,9 @@ a {
   font-size: 1.9em;
   line-height: 1.5;
   padding-bottom: 5px;
-  border-bottom: 1px solid #000;
-
+  border-bottom: 1px solid #dcdcdc;
 }
+
 .header {
   max-width: 990px;
   padding-left: 15px;
@@ -248,25 +248,27 @@ a {
   padding-top: 35px;
   padding-bottom: 45px;
 }
-.bg-blue {
+/*.bg-blue {
   width: 100%;
   height: 100%;
   background-color: #106cd2;
-}
-.text-white {
-  color: #fff;
+}*/
+.text-cat {
   font-size: 2em;
   font-weight: 300;
   line-height: 1.282;
-  padding-left: 40px;
-  padding-top: 20px;
+  padding-left: 15px;
 }
-.text-white-cat {
-  font-size: 9em;
-  color: #fff;
+.text-cat-big {
+  font-size: 8em;
+  line-height: 0.8;
   font-weight: 600;
+  padding-left: 20px;
 }
 /*dropdown*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 .dropdown-cat {
   display: block;
   min-height: 167px;
@@ -305,8 +307,13 @@ a {
   margin-bottom: 30px;
 }
 .section-links:hover {
-  opacity:0.7;
+  color: #fff;
+  background-color: #106cd2;
 	transition: ease-in-out 0.25s;
+  text-decoration: none;
+}
+.section-links:hover .link-description{
+  color: #fff;
 }
 .link-title {
   font-size: 1.6em;
@@ -323,13 +330,12 @@ a {
   .section-links {
     text-align: center;
   }
-  .bg-blue {
-    margin-bottom: 30px;
-  }
 }
 .docs-wrap {
   max-width: 440px;
   border: 1px dashed #828282;
+  border-image: url(../images/border2.png) 2 round round;
+
   margin-left: auto;
   margin-right: 0;
   padding-bottom: 25px;
