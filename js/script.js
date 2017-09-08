@@ -20,30 +20,3 @@ $(document).ready(function(){
       nextArrow: $('.js-car-slider-next')
     });
   });
-
-
-
-
-// yandex map
-
-ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [50.25489907311284,127.5666185],
-            controls: ['trafficControl'],
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search',
-            suppressMapOpenBlock: true
-
-        });
-
-
-
-      myMap.geoObjects
-          .add(new ymaps.Placemark([50.25489907311284,127.5666185], {
-            balloonContent: ''
-        }, {
-            preset: 'islands#dotIcon',
-            iconColor: '#1e1a63'
-        }))
-})
